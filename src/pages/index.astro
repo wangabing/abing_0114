@@ -20,5 +20,11 @@ const pageTitle = 'Home Page';
 		<h1>Astro</h1>
 		<h2>Hi, Abing!</h2>
 		<Footer />
+
+		<script>
+			document.querySelector('.hamburger')?.addEventListener('click', () => {
+      			document.querySelector('.nav-links')?.classList.toggle('expanded');
+    		});
+		</script>
 	</body>
 </html>
