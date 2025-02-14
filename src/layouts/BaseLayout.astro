@@ -12,9 +12,10 @@ const pageTitle = "Home Page";
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body>
+  <>
     <Header />
     <h1>{pageTitle}</h1>
+    <slot />
     <Footer />
     <script>
       import "../scripts/menu.js";
